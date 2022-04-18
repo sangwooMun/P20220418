@@ -46,7 +46,7 @@ public class FriendList {
 					friend = new ComFriend(name, phone, company, department);
 				}
 
-				// 비어있ㅎ는 위치배열 저장
+				// 비어있는 위치배열 저장
 				for (int i = 0; i < friends.length; i++) {
 					if (friends[i] == null) {
 						friends[i] = friend;
