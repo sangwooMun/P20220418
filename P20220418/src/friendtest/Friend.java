@@ -6,11 +6,13 @@ public class Friend {
 	
 	private String name;
 	private String phone;
+	private Gender gender; // 남 MEN, 여 WOMEN
 	
-	public Friend(String name, String phone) {
+	public Friend(String name, String phone, Gender gender) {
 		super();
 		this.name = name;
 		this.phone = phone;
+		this.gender = gender;
 	}
 
 	public String getName() {
@@ -29,9 +31,17 @@ public class Friend {
 		this.phone = phone;
 	}
 
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
 	@Override
 	public String toString() {
-		return "Frined [name= " + name + ", phone= " + phone + "";
+		return "Frined [name= " + name + ", phone= " + phone + " gender= " + gender + "";
 	}
 	
 	
